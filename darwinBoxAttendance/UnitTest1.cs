@@ -35,18 +35,18 @@ namespace darwinBoxAttendance
           //  string txt = FunctionalLibrary.ElementText(driver, "//span[contains(text(),'Absent')]");
 
          
-                string date = DateTime.Today.ToString();
+                //string date = DateTime.Today.ToString();
 
-                string cdate = date.Substring(0, 2);
+                //string cdate = date.Substring(0, 2);
 
-                int date1 = Convert.ToInt32(cdate);
+                //int date1 = Convert.ToInt32(cdate);
 
 
-                int Rdate = date1 - 1;
+                //int Rdate = date1 - 1;
 
-                Console.WriteLine(Rdate);
+                //Console.WriteLine(Rdate);
 
-                Thread.Sleep(2000);
+                //Thread.Sleep(2000);
 
                 FunctionalLibrary.waitForElement(driver, "//*[@id='attendance_request']");
 
@@ -67,19 +67,19 @@ namespace darwinBoxAttendance
                 FunctionalLibrary.clickAction(driver, "//*[@class='al-other-than-shift']/div/div/div[2]/div[2]", "xpath");
 
 
-                FunctionalLibrary.clickAction(driver, "//*[@class='al-request-log-form-container']/div[1]", "xpath");
+                //FunctionalLibrary.clickAction(driver, "//*[@class='al-request-log-form-container']/div[1]", "xpath");
 
-                FunctionalLibrary.waitForElement(driver, "//a[contains(text(),'" + Rdate + "')]");
+                //FunctionalLibrary.waitForElement(driver, "//a[contains(text(),'" + Rdate + "')]");
 
-                FunctionalLibrary.clickAction(driver, "//a[contains(text(),'" + Rdate + "')]", "xpath");
+                //FunctionalLibrary.clickAction(driver, "//a[contains(text(),'" + Rdate + "')]", "xpath");
 
-                FunctionalLibrary.waitForElement(driver, "//input[@id='punchin-date-to']");
+                //FunctionalLibrary.waitForElement(driver, "//input[@id='punchin-date-to']");
 
-                FunctionalLibrary.clickAction(driver, "//input[@id='punchin-date-to']", "xpath");
+                //FunctionalLibrary.clickAction(driver, "//input[@id='punchin-date-to']", "xpath");
 
-                FunctionalLibrary.waitForElement(driver, "//a[@class='ui-state-default'][contains(text(),'" + Rdate + "')]");
+                //FunctionalLibrary.waitForElement(driver, "//a[@class='ui-state-default'][contains(text(),'" + Rdate + "')]");
 
-                FunctionalLibrary.clickAction(driver, "//a[@class='ui-state-default'][contains(text(),'" + Rdate + "')]", "xpath");
+                //FunctionalLibrary.clickAction(driver, "//a[@class='ui-state-default'][contains(text(),'" + Rdate + "')]", "xpath");
 
 
                 FunctionalLibrary.clickAction(driver, "/html/body/div[2]/div[1]/div/div[11]/div/div/div/div[2]/form/div[1]/div[6]/div[3]/div/input", "xpath");
